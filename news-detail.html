@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情 - 连用科技 LinkApp</title>
+    <meta name="description" content="连用科技新闻详情页面，了解最新产品动态与行业洞察。">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="canonical" href="https://www.linkapp.com.cn/news-detail">
+    <meta name="keywords" content="连用科技,LinkApp,AI数智一体化平台,非结构化数据统管平台,文件网间交换平台,运营类AI解决方案,网盘,企业AI">
+    <meta property="og:site_name" content="连用科技 LinkApp">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="新闻详情 - 连用科技 LinkApp">
+    <meta property="og:description" content="连用科技新闻详情页面，了解最新产品动态与行业洞察。">
+    <meta property="og:image" content="https://www.linkapp.com.cn/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="新闻详情 - 连用科技 LinkApp">
+    <meta name="twitter:description" content="连用科技新闻详情页面，了解最新产品动态与行业洞察。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .gradient-text { @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500; }
+            .gradient-bg { @apply bg-gradient-to-r from-blue-600 to-cyan-500; }
+        }
+    </style>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+        .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="text-slate-700 bg-slate-50 antialiased">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 nav-blur border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center text-white"><i data-lucide="link" class="w-5 h-5"></i></div>
+                    <span class="text-xl font-bold text-slate-900">连用科技</span>
+                </a>
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">首页</a>
+                    <a href="product.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">产品中心</a>
+                    <a href="solution.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">解决方案</a>
+                    <a href="cases.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">经典案例</a>
+                    <a href="support.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">服务与支持</a>
+                    <a href="news.html" class="text-sm font-medium text-blue-600">新闻动态</a>
+                    <a href="about.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">关于连用</a>
+                </div>
+                <a href="index.html#contact" class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white rounded-full gradient-bg hover:shadow-lg transition-all">联系我们</a>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-blue-600"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200">
+            <div class="px-4 py-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">首页</a>
+                <a href="product.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">产品中心</a>
+                <a href="solution.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">解决方案</a>
+                <a href="cases.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">经典案例</a>
+                <a href="support.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">服务与支持</a>
+                <a href="news.html" class="block px-3 py-2 text-sm font-medium text-blue-600 bg-blue-50 rounded-lg">新闻动态</a>
+                <a href="about.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">关于连用</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="news.html" class="inline-flex items-center text-sm text-slate-500 hover:text-blue-600 mb-6">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-1"></i> 返回新闻列表
+            </a>
+            <div id="news-content" data-aos="fade-up">
+                <!-- 内容将由 JS 动态填充 -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center text-white"><i data-lucide="link" class="w-5 h-5"></i></div>
+                        <span class="text-xl font-bold text-white">连用科技</span>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6">运营类 AI 解决方案提供商和服务商。</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">产品</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="product.html#netdisk" class="hover:text-blue-400 transition-colors">非结构化数据统管平台</a></li>
+                        <li><a href="product.html#exchange" class="hover:text-blue-400 transition-colors">文件网间交换平台</a></li>
+                        <li><a href="product.html#ai" class="hover:text-blue-400 transition-colors">AI 数智一体化平台</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">支持</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="solution.html" class="hover:text-blue-400 transition-colors">解决方案</a></li>
+                        <li><a href="cases.html" class="hover:text-blue-400 transition-colors">经典案例</a></li>
+                        <li><a href="support.html" class="hover:text-blue-400 transition-colors">服务与支持</a></li>
+                        <li><a href="news.html" class="hover:text-blue-400 transition-colors">新闻动态</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">联系我们</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3"><i data-lucide="globe" class="w-4 h-4 mt-0.5 text-blue-400"></i> www.linkapp.cn</li>
+                        <li class="flex items-start gap-3"><i data-lucide="mail" class="w-4 h-4 mt-0.5 text-blue-400"></i> service1@linkapp.cn</li>
+                        <li class="flex items-start gap-3"><i data-lucide="phone" class="w-4 h-4 mt-0.5 text-blue-400"></i> 400-823-7828</li>
+                        <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-blue-400"></i> 深圳市龙华区民治街道上芬社区上塘商业大厦</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-slate-500">© 2026 深圳市连用科技有限公司 版权所有</div>
+                <div class="text-sm text-slate-500">粤 ICP 备XXXXXXXX号</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const newsData = {
+            '171': {
+                title: '文件数据"不落地"，企业文件数据防泄露的黄金法则',
+                date: '2024/08/30',
+                content: `
+                    <p class="mb-4">在数字化转型的浪潮中，企业文件数据已成为最核心的资产之一。然而，文件在创建、流转、共享、使用的过程中，面临着泄露、滥用、失控等多重风险。如何在保障业务效率的同时，实现文件数据的安全可控，是每个企业都必须面对的课题。</p>
+                    <p class="mb-4">"数据不落地"作为文件数据防泄露的黄金法则，强调数据在整个生命周期中都保持在受控的环境中，避免在终端设备、个人电脑、非授权系统中留下副本。通过集中存储、权限控制、外发审批、水印追踪、DLP 检测、审计日志等手段，企业可以有效降低数据泄露风险。</p>
+                    <p class="mb-4">连用科技基于多年行业实践，提出"数据不落地"的完整解决方案：文件统一纳管至企业网盘，所有访问通过受控入口进行；敏感文件外发需经过审批并附加水印；AI 应用基于受控知识库提供服务，确保数据不会落入非授权环境。</p>
+                    <p class="mb-4">未来，随着 AI 应用的普及，数据安全将面临更多新挑战。连用科技将持续创新，帮助企业构建安全、可信的数据使用环境，让数据真正为业务创造价值。</p>
+                `
+            },
+            '170': {
+                title: '华为携手连用发布基于华为数据湖机台海量数据管理联合方案',
+                date: '2024/08/13',
+                content: `
+                    <p class="mb-4">近日，连用科技与华为联合发布了基于华为数据湖机台的海量数据管理联合方案。该方案结合华为数据湖机台的高性能存储与计算能力，以及连用科技在企业数据管理、文件安全交换、AI 知识库方面的深厚积累，为企业提供海量数据的全生命周期管理能力。</p>
+                    <p class="mb-4">方案重点解决了企业在海量数据场景下面临的存储成本高、检索效率低、数据安全隐患多、知识利用不足等问题。通过统一的数据管理平台，企业可以实现 PB 级数据的集中存储、快速检索、安全共享与智能应用。</p>
+                    <p class="mb-4">此次合作是连用科技生态战略的重要一步。未来，连用科技将继续与华为等优秀合作伙伴携手，为客户提供更加完善的数字化解决方案，共同推动企业数据管理智能化升级。</p>
+                `
+            },
+            '169': {
+                title: '连用科技发布 FSM5.2 文件安全交换新功能，推动行业发展新进程',
+                date: '2024/07/22',
+                content: `
+                    <p class="mb-4">连用科技正式发布 FSM5.2 文件安全交换版本，带来多项重大功能升级。新版本在安全性、易用性和性能方面均有显著提升，进一步满足金融、政府、能源等高端客户对跨网数据交换的严苛要求。</p>
+                    <p class="mb-4">FSM5.2 新增了智能审批路由、批量摆渡调度、增强型病毒查杀、敏感内容深度检测、传输加速等功能，同时优化了用户界面，提升了管理员和终端用户的操作体验。</p>
+                    <p class="mb-4">作为文件安全交换领域的领先产品，FSM 系列已服务众多大型金融机构和政府部门。此次 5.2 版本的发布，标志着连用科技在推动行业技术进步方面又迈出了坚实一步。</p>
+                `
+            },
+            '168': {
+                title: '连用中标某大型银行金融租赁电子文档中台+文件安全交换一体化平台',
+                date: '2024/06/28',
+                content: `
+                    <p class="mb-4">近日，连用科技成功中标某大型银行金融租赁公司电子文档中台与文件安全交换一体化平台项目。该项目将帮助客户构建统一的文档管理体系，实现业务文档的集中存储、安全共享与合规流转。</p>
+                    <p class="mb-4">项目将部署非结构化数据统管平台、文件网间交换平台等核心产品，并与客户现有业务系统进行集成，提供从文档采集、管理、审批、交换到归档的全流程能力。同时，平台将满足金融行业严格的审计与合规要求。</p>
+                    <p class="mb-4">此次中标是连用科技在金融租赁领域的又一重要突破，充分体现了客户对连用科技产品能力与服务水平的高度认可。连用科技将继续深耕金融行业，为更多客户提供优质解决方案。</p>
+                `
+            },
+            '167': {
+                title: '重磅推出！连用Link AI 为企业业务提质增效，最大化释放知识价值',
+                date: '2024/06/21',
+                content: `
+                    <p class="mb-4">连用科技正式推出 Link AI 数智一体化平台，旨在帮助企业将分散的知识资产转化为可驱动业务的智能能力。平台提供高质量语料管理、语料安全合规管控、9 大开箱即用智能体、智能体工作流编排等核心能力。</p>
+                    <p class="mb-4">Link AI 可与非结构化数据统管平台无缝对接，企业网盘中的文件可一键推送至 AI 知识库，经过自动解析、向量化处理和安全审核后，赋能智能问答、文档写作、合同审查、招投标辅助等多种业务场景。</p>
+                    <p class="mb-4">特别值得一提的是，Link AI 坚持"数据不落地"原则，所有 AI 处理过程均在企业受控环境中完成，确保核心知识资产不会外泄。这为企业放心使用 AI 技术提供了坚实保障。</p>
+                    <p class="mb-4">未来，连用科技将持续丰富智能体生态，拓展更多业务场景，助力企业全面迈入 AI 驱动的运营新时代。</p>
+                `
+            },
+            '165': {
+                title: '金融监管总局就《银行保险机构数据安全管理办法（征求意见稿）》公开征求意见',
+                date: '2024/04/02',
+                content: `
+                    <p class="mb-4">近日，国家金融监督管理总局就《银行保险机构数据安全管理办法（征求意见稿）》公开征求意见。该办法对银行保险机构的数据分类分级、数据安全管理、数据安全技术防护、数据安全风险评估等方面提出了全面要求。</p>
+                    <p class="mb-4">对于金融机构而言，数据安全管理既是合规要求，也是业务稳健发展的基础。文件数据作为金融机构最常见的数据形态之一，其安全管控尤为重要。金融机构需要建立覆盖文件创建、存储、使用、流转、销毁全生命周期的安全管理体系。</p>
+                    <p class="mb-4">连用科技长期服务金融行业，深刻理解银行、保险、证券等机构的数据安全合规需求。非结构化数据统管平台、文件网间交换平台等产品均围绕金融合规要求设计，提供数据分类分级、访问控制、审批审计、加密传输、外发管控等完整能力，助力金融机构满足监管要求。</p>
+                `
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id') || '171';
+        const news = newsData[id] || newsData['171'];
+        document.getElementById('news-content').innerHTML = `
+            <div class="text-sm text-slate-400 mb-3">${news.date}</div>
+            <h1 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-8">${news.title}</h1>
+            <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed">
+                ${news.content}
+            </div>
+        `;
+
+        lucide.createIcons();
+        AOS.init({ once: true, offset: 100, duration: 600, easing: 'ease-out-cubic' });
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => navbar.classList.toggle('shadow-sm', window.scrollY > 20));
+    </script>
+
+    <!-- Back to top -->
+    <button id="back-to-top" aria-label="回到顶部" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full gradient-bg text-white shadow-lg opacity-0 invisible translate-y-3 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+    <script>
+      (function(){
+        var btn = document.getElementById('back-to-top');
+        if(!btn) return;
+        function onScroll(){ if(window.scrollY > 400){ btn.classList.remove('opacity-0','invisible','translate-y-3'); } else { btn.classList.add('opacity-0','invisible','translate-y-3'); } }
+        window.addEventListener('scroll', onScroll, {passive:true});
+        btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+        onScroll();
+        if(window.lucide) lucide.createIcons();
+      })();
+    </script>
+
+</body>
+</html>

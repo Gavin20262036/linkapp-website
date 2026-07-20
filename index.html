@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>连用科技 LinkApp - 运营类AI解决方案提供商和服务商</title>
+    <meta name="description" content="深圳市连用科技有限公司，运营类AI解决方案提供商和服务商。提供网盘、文件网间交换平台、AI数智一体化平台等产品，服务1000+客户，覆盖30+行业。">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="canonical" href="https://www.linkapp.com.cn/">
+    <meta name="keywords" content="连用科技,LinkApp,AI数智一体化平台,非结构化数据统管平台,文件网间交换平台,运营类AI解决方案,网盘,企业AI">
+    <meta property="og:site_name" content="连用科技 LinkApp">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="连用科技 LinkApp - 运营类AI解决方案提供商和服务商">
+    <meta property="og:description" content="深圳市连用科技有限公司，运营类AI解决方案提供商和服务商。提供网盘、文件网间交换平台、AI数智一体化平台等产品，服务1000+客户，覆盖30+行业。">
+    <meta property="og:image" content="https://www.linkapp.com.cn/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="连用科技 LinkApp - 运营类AI解决方案提供商和服务商">
+    <meta name="twitter:description" content="深圳市连用科技有限公司，运营类AI解决方案提供商和服务商。提供网盘、文件网间交换平台、AI数智一体化平台等产品，服务1000+客户，覆盖30+行业。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .gradient-text {
+                @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500;
+            }
+            .gradient-bg {
+                @apply bg-gradient-to-r from-blue-600 to-cyan-500;
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+            }
+        }
+    </style>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+        .hero-bg { background: radial-gradient(ellipse at top right, rgba(59,130,246,0.08) 0%, transparent 50%), radial-gradient(ellipse at bottom left, rgba(6,182,212,0.06) 0%, transparent 50%); }
+        .grid-pattern { background-image: radial-gradient(circle, #e2e8f0 1px, transparent 1px); background-size: 24px 24px; }
+        .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .counter-value { font-variant-numeric: tabular-nums; }
+        @keyframes floatSlow { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        @keyframes floatMedium { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        @keyframes floatFast { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-25px); } }
+        .animate-float-slow { animation: floatSlow 8s ease-in-out infinite; }
+        .animate-float-medium { animation: floatMedium 6s ease-in-out infinite; }
+        .animate-float-fast { animation: floatFast 4s ease-in-out infinite; }
+    </style>
+</head>
+<body class="text-slate-700 bg-slate-50 antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 nav-blur border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center text-white">
+                        <i data-lucide="link" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-bold text-slate-900">连用科技</span>
+                </a>
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="text-sm font-medium text-blue-600">首页</a>
+                    <a href="product.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">产品中心</a>
+                    <a href="solution.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">解决方案</a>
+                    <a href="cases.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">经典案例</a>
+                    <a href="support.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">服务与支持</a>
+                    <a href="news.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">新闻动态</a>
+                    <a href="about.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">关于连用</a>
+                </div>
+                <a href="#contact" class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white rounded-full gradient-bg hover:shadow-lg transition-all">
+                    联系我们
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-blue-600">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200">
+            <div class="px-4 py-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-sm font-medium text-blue-600 bg-blue-50 rounded-lg">首页</a>
+                <a href="product.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">产品中心</a>
+                <a href="solution.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">解决方案</a>
+                <a href="cases.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">经典案例</a>
+                <a href="support.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">服务与支持</a>
+                <a href="news.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">新闻动态</a>
+                <a href="about.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">关于连用</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="relative w-full h-[520px] lg:h-[620px] flex items-center justify-center overflow-hidden" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 30%, #e0f2fe 60%, #eef2ff 100%);">
+        <!-- Subtle grid -->
+        <div class="absolute inset-0 opacity-20">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="light-grid" patternUnits="userSpaceOnUse" width="80" height="80">
+                        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#93c5fd" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#light-grid)"/>
+            </svg>
+        </div>
+        <!-- Soft light orbs -->
+        <div class="absolute -top-20 -right-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-indigo-400/8 rounded-full blur-3xl"></div>
+        <!-- Connection nodes -->
+        <svg class="absolute inset-0 w-full h-full opacity-15" xmlns="http://www.w3.org/2000/svg">
+            <line x1="8%" y1="35%" x2="22%" y2="48%" stroke="#3b82f6" stroke-width="1.5"/>
+            <line x1="22%" y1="48%" x2="40%" y2="30%" stroke="#3b82f6" stroke-width="1.5"/>
+            <line x1="40%" y1="30%" x2="58%" y2="52%" stroke="#06b6d4" stroke-width="1.5"/>
+            <line x1="58%" y1="52%" x2="78%" y2="38%" stroke="#06b6d4" stroke-width="1.5"/>
+            <line x1="78%" y1="38%" x2="92%" y2="50%" stroke="#6366f1" stroke-width="1.5"/>
+            <circle cx="8%" cy="35%" r="5" fill="#3b82f6" opacity="0.6"/>
+            <circle cx="22%" cy="48%" r="5" fill="#3b82f6" opacity="0.6"/>
+            <circle cx="40%" cy="30%" r="5" fill="#06b6d4" opacity="0.6"/>
+            <circle cx="58%" cy="52%" r="5" fill="#06b6d4" opacity="0.6"/>
+            <circle cx="78%" cy="38%" r="5" fill="#6366f1" opacity="0.6"/>
+            <circle cx="92%" cy="50%" r="5" fill="#3b82f6" opacity="0.6"/>
+        </svg>
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-tight mb-6">
+                AI 数智一体化平台
+            </h1>
+            <p class="text-4xl sm:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 mb-8">
+                LinkApp AI 6 重磅发布
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="product.html#ai" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:shadow-xl hover:shadow-blue-500/30 transition-all">
+                    了解详情
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                </a>
+                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-blue-600 border-2 border-blue-300 rounded-full hover:bg-blue-50 hover:border-blue-400 transition-all">
+                    预约演示
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Data -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8" data-aos="fade-up">
+                <div class="text-center p-6 rounded-2xl bg-slate-50">
+                    <div class="text-4xl lg:text-5xl font-bold gradient-text counter-value" data-target="1000">0</div>
+                    <div class="text-sm text-slate-500 mt-2">服务客户</div>
+                </div>
+                <div class="text-center p-6 rounded-2xl bg-slate-50">
+                    <div class="text-4xl lg:text-5xl font-bold gradient-text counter-value" data-target="100">0</div>
+                    <div class="text-sm text-slate-500 mt-2">金融客户</div>
+                </div>
+                <div class="text-center p-6 rounded-2xl bg-slate-50">
+                    <div class="text-4xl lg:text-5xl font-bold gradient-text counter-value" data-target="30">0</div>
+                    <div class="text-sm text-slate-500 mt-2">覆盖行业</div>
+                </div>
+                <div class="text-center p-6 rounded-2xl bg-slate-50">
+                    <div class="text-4xl lg:text-5xl font-bold gradient-text">PB</div>
+                    <div class="text-sm text-slate-500 mt-2">级数据管理规模</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Architecture -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">三大产品线</h2>
+                <p class="text-lg text-slate-600">覆盖企业数据全生命周期管理，从文件安全存储、跨网交换到 AI 智能应用，构建统一的数据价值平台。</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg shadow-slate-200/50 card-hover border border-slate-100" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 mb-6">
+                        <i data-lucide="hard-drive" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">非结构化数据统管平台</h3>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">企业级文件统一管理平台，实现文件集中存储、安全共享与高效协作，并一键推送至 AI 知识库。</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> 文件统一纳管</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> 内外部安全共享</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> 上传下载审批</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> 一键推送 AI 知识库</li>
+                    </ul>
+                    <a href="product.html#netdisk" class="inline-flex items-center mt-6 text-sm font-medium text-blue-600 hover:text-blue-700">
+                        了解详情 <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg shadow-slate-200/50 card-hover border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-100 flex items-center justify-center text-cyan-600 mb-6">
+                        <i data-lucide="arrow-left-right" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">文件网间交换平台</h3>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">安全高效的跨网文件摆渡平台，满足企业内网、外网、专网之间的数据交换与合规审计需求。</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-500"></i> 文件跨网摆渡</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-500"></i> 多种安全能力</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-500"></i> 详细日志审计</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-500"></i> 合规可控传输</li>
+                    </ul>
+                    <a href="product.html#exchange" class="inline-flex items-center mt-6 text-sm font-medium text-cyan-600 hover:text-cyan-700">
+                        了解详情 <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg shadow-slate-200/50 card-hover border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-100 flex items-center justify-center text-indigo-600 mb-6">
+                        <i data-lucide="brain-circuit" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">AI 数智一体化平台</h3>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">面向企业运营场景的 AI 应用平台，提供语料管理、智能体与工作流编排，让知识真正驱动业务。</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500"></i> 高质量语料管理</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500"></i> 语料安全合规管控</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500"></i> 9 大开箱即用智能体</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500"></i> 数据不落地</li>
+                    </ul>
+                    <a href="product.html#ai" class="inline-flex items-center mt-6 text-sm font-medium text-indigo-600 hover:text-indigo-700">
+                        了解详情 <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">行业解决方案</h2>
+                <p class="text-lg text-slate-600">深耕金融、医疗、制造、政府、能源等行业，提供贴合业务场景的数字化解决方案。</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="solution.html#manufacturing" class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="factory" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">高端制造</h3>
+                    <p class="text-sm text-slate-600">设计图纸管理、供应链协同、知识沉淀与复用。</p>
+                </a>
+                <a href="solution.html#energy" class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all" data-aos="fade-up" data-aos-delay="50">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">能源电力</h3>
+                    <p class="text-sm text-slate-600">生产数据交换、调度指令安全传输、设备文档管理。</p>
+                </a>
+                <a href="solution.html#finance" class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="landmark" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">金融行业</h3>
+                    <p class="text-sm text-slate-600">文档中台、数据安全交换、合规审计与知识库管理。</p>
+                </a>
+                <a href="solution.html#medical" class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all" data-aos="fade-up" data-aos-delay="150">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="stethoscope" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">医疗保险</h3>
+                    <p class="text-sm text-slate-600">医疗文件统管、患者数据安全、科研资料共享。</p>
+                </a>
+                <a href="solution.html#education" class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">教育科研</h3>
+                    <p class="text-sm text-slate-600">科研资料管理、教学成果共享、智能知识服务。</p>
+                </a>
+                <a href="solution.html#government" class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all" data-aos="fade-up" data-aos-delay="250">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="building-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">政府机构</h3>
+                    <p class="text-sm text-slate-600">跨网数据交换、公文流转、档案管理与安全协同。</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Logos -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">信赖连用科技的客户</h2>
+                <p class="text-slate-600">已服务 1000+ 企业客户，覆盖金融、医疗、制造、政府、能源等 30+ 行业。</p>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4" data-aos="fade-up" id="client-logos">
+                <!-- JS 动态渲染客户 Logo -->
+            </div>
+            <div class="text-center mt-8">
+                <a href="cases.html" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700">
+                    查看全部客户案例 <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">客户声音</h2>
+                <p class="text-lg text-slate-600">来自各行各业客户的真实反馈</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 text-xs font-medium text-blue-600 bg-blue-100 rounded-full">金融</span>
+                    </div>
+                    <p class="text-slate-700 mb-6 text-sm leading-relaxed">"连用科技的文件安全交换平台，帮助我行实现了生产网与办公网之间的合规数据摆渡，审批流程和审计日志都清晰可查，大大提升了数据安全管控水平。"</p>
+                    <div class="text-sm font-medium text-slate-900">某大型国有银行 · 信息科技部</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 text-xs font-medium text-cyan-600 bg-cyan-100 rounded-full">企业集团</span>
+                    </div>
+                    <p class="text-slate-700 mb-6 text-sm leading-relaxed">"通过非结构化数据统管平台，我们实现了集团总部与子公司文件的统一纳管，图纸、合同等核心资料实现安全共享，协作效率提升了 50% 以上。"</p>
+                    <div class="text-sm font-medium text-slate-900">某大型制造企业 · 数字化部总监</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 text-xs font-medium text-indigo-600 bg-indigo-100 rounded-full">能源电力</span>
+                    </div>
+                    <p class="text-slate-700 mb-6 text-sm leading-relaxed">"文件网间交换平台满足了我们调度数据在不同安全域之间流转的合规要求，传输稳定、日志完整，是能源行业数据交换的可靠选择。"</p>
+                    <div class="text-sm font-medium text-slate-900">某省级电网 · 信息化负责人</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 text-xs font-medium text-blue-600 bg-blue-100 rounded-full">政府单位</span>
+                    </div>
+                    <p class="text-slate-700 mb-6 text-sm leading-relaxed">"连用科技的方案贴合政务场景需求，公文流转和档案管理更加规范，跨部门数据交换安全可控，有效提升了政务协同效率。"</p>
+                    <div class="text-sm font-medium text-slate-900">某市政府 · 大数据管理局</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 text-xs font-medium text-cyan-600 bg-cyan-100 rounded-full">公检法机关</span>
+                    </div>
+                    <p class="text-slate-700 mb-6 text-sm leading-relaxed">"数据安全是政法系统的生命线。非结构化数据统管平台和文件网间交换平台的组合方案，让我们在保证办案效率的同时，实现了数据全生命周期的安全管控。"</p>
+                    <div class="text-sm font-medium text-slate-900">某高级人民法院 · 信息中心</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 text-xs font-medium text-indigo-600 bg-indigo-100 rounded-full">医疗教育</span>
+                    </div>
+                    <p class="text-slate-700 mb-6 text-sm leading-relaxed">"AI 数智一体化平台帮助我们搭建了医学知识库和智能问答助手，师生和医护人员都能快速获取所需知识，真正做到了知识赋能业务。"</p>
+                    <div class="text-sm font-medium text-slate-900">某三甲医院 · 科教处处长</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Scenarios -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">应用场景</h2>
+                <p class="text-lg text-slate-600">覆盖数据管理、安全交换、AI 应用等核心场景，助力企业数字化转型。</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg shadow-slate-200/50 border border-slate-100" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 mb-6">
+                        <i data-lucide="folder-tree" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">企业文件统一纳管</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">将分散在个人电脑、业务系统、邮件中的文件集中到统一平台，实现分类存储、权限管控、版本管理与安全共享，消除信息孤岛。</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> 多终端同步访问</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> 细粒度权限控制</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg shadow-slate-200/50 border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-100 flex items-center justify-center text-cyan-600 mb-6">
+                        <i data-lucide="shield" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">跨网数据安全交换</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">在政府、金融、能源等对安全等级要求高的场景中，实现内外网、专网之间的文件安全摆渡，兼顾效率与合规。</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-500"></i> 多层级安全审批</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-500"></i> 全链路日志审计</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg shadow-slate-200/50 border border-slate-100" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-100 flex items-center justify-center text-indigo-600 mb-6">
+                        <i data-lucide="sparkles" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">企业知识库与智能问答</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">将企业历史文档、制度规范、产品资料沉淀为结构化知识库，通过 AI 智能体提供问答、写作、总结等能力，释放知识价值。</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500"></i> 一键推送网盘文件到知识库</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500"></i> 数据不落地，安全可控</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg shadow-slate-200/50 border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 mb-6">
+                        <i data-lucide="git-branch" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">AI助理和数字员工创建</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">通过低代码方式编排多个智能体协同工作，将 AI 能力嵌入合同审核、客服助手、招投标辅助等业务流程，提质增效。</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> 可视化流程编排</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> 多智能体协同</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Advantages -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">核心优势</h2>
+                <p class="text-lg text-slate-600">为什么选择连用科技</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 mx-auto mb-4">
+                        <i data-lucide="lock" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">安全合规</h3>
+                    <p class="text-sm text-slate-600">数据不落地、全程加密、细粒度权限与审计，满足等保及行业合规要求。</p>
+                </div>
+                <div class="text-center p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-100 flex items-center justify-center text-cyan-600 mx-auto mb-4">
+                        <i data-lucide="rocket" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">开箱即用</h3>
+                    <p class="text-sm text-slate-600">9 大智能体、预置工作流模板，快速落地 AI 应用，无需从零搭建。</p>
+                </div>
+                <div class="text-center p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-100 flex items-center justify-center text-indigo-600 mx-auto mb-4">
+                        <i data-lucide="layers" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">一体化平台</h3>
+                    <p class="text-sm text-slate-600">网盘、网间交换、AI 平台深度融合，数据从存储到应用无缝流转。</p>
+                </div>
+                <div class="text-center p-6 rounded-2xl bg-slate-50 border border-slate-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 mx-auto mb-4">
+                        <i data-lucide="headphones" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">专业服务</h3>
+                    <p class="text-sm text-slate-600">18年服务金融、政府、医疗等行业的经验，提供从咨询到交付的全流程支持。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-end justify-between mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">最新动态</h2>
+                    <p class="text-lg text-slate-600">了解连用科技的最新产品与行业洞察</p>
+                </div>
+                <a href="news.html" class="hidden sm:inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700">
+                    查看更多 <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="news-detail.html?id=171" class="group block bg-white rounded-2xl overflow-hidden shadow-lg shadow-slate-200/50 border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="0">
+                    <div class="h-40 bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center">
+                        <i data-lucide="shield" class="w-12 h-12 text-blue-300 group-hover:text-blue-500 transition-colors"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-slate-400 mb-2">2024/08/30</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">文件数据"不落地"，企业文件数据防泄露的黄金法则</h3>
+                        <p class="text-sm text-slate-600 line-clamp-2">探讨企业如何在文件流转过程中实现数据防泄露，构建安全可控的数据使用环境。</p>
+                    </div>
+                </a>
+                <a href="news-detail.html?id=170" class="group block bg-white rounded-2xl overflow-hidden shadow-lg shadow-slate-200/50 border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-40 bg-gradient-to-br from-cyan-100 to-cyan-50 flex items-center justify-center">
+                        <i data-lucide="handshake" class="w-12 h-12 text-cyan-300 group-hover:text-cyan-500 transition-colors"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-slate-400 mb-2">2024/08/13</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-cyan-600 transition-colors">华为携手连用发布基于华为数据湖机台海量数据管理联合方案</h3>
+                        <p class="text-sm text-slate-600 line-clamp-2">连用科技与华为联合推出数据湖机台海量数据管理方案，助力企业高效治理海量数据。</p>
+                    </div>
+                </a>
+                <a href="news-detail.html?id=169" class="group block bg-white rounded-2xl overflow-hidden shadow-lg shadow-slate-200/50 border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-40 bg-gradient-to-br from-indigo-100 to-indigo-50 flex items-center justify-center">
+                        <i data-lucide="refresh-cw" class="w-12 h-12 text-indigo-300 group-hover:text-indigo-500 transition-colors"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-slate-400 mb-2">2024/07/22</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">连用科技发布 FSM5.2 文件安全交换新功能，推动行业发展新进程</h3>
+                        <p class="text-sm text-slate-600 line-clamp-2">FSM5.2 版本带来更多安全交换能力，进一步提升跨网数据交换效率与安全性。</p>
+                    </div>
+                </a>
+            </div>
+            <div class="mt-8 text-center sm:hidden">
+                <a href="news.html" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700">
+                    查看更多 <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative rounded-3xl overflow-hidden gradient-bg p-8 lg:p-16 text-center" data-aos="zoom-in">
+                <div class="absolute inset-0 opacity-20">
+                    <div class="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="absolute bottom-0 right-0 w-64 h-64 bg-cyan-300 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+                </div>
+                <div class="relative z-10">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">开启您的数字化转型之旅</h2>
+                    <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">立即联系连用科技，获取专属产品演示与解决方案咨询。</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="tel:400-823-7828" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-blue-600 bg-white rounded-full hover:bg-blue-50 transition-all">
+                            <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                            400-823-7828
+                        </a>
+                        <a href="mailto:service1@linkapp.cn" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-white/30 rounded-full hover:bg-white/10 transition-all">
+                            <i data-lucide="mail" class="w-4 h-4 mr-2"></i>
+                            service1@linkapp.cn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center text-white">
+                            <i data-lucide="link" class="w-5 h-5"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">连用科技</span>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6">运营类 AI 解决方案提供商和服务商，专注于企业数据管理与 AI 智能应用。</p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors"><i data-lucide="phone" class="w-4 h-4"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors"><i data-lucide="mail" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">产品</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="product.html#netdisk" class="hover:text-blue-400 transition-colors">非结构化数据统管平台</a></li>
+                        <li><a href="product.html#exchange" class="hover:text-blue-400 transition-colors">文件网间交换平台</a></li>
+                        <li><a href="product.html#ai" class="hover:text-blue-400 transition-colors">AI 数智一体化平台</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">支持</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="solution.html" class="hover:text-blue-400 transition-colors">解决方案</a></li>
+                        <li><a href="cases.html" class="hover:text-blue-400 transition-colors">经典案例</a></li>
+                        <li><a href="support.html" class="hover:text-blue-400 transition-colors">服务与支持</a></li>
+                        <li><a href="news.html" class="hover:text-blue-400 transition-colors">新闻动态</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">联系我们</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3"><i data-lucide="globe" class="w-4 h-4 mt-0.5 text-blue-400"></i> www.linkapp.cn</li>
+                        <li class="flex items-start gap-3"><i data-lucide="mail" class="w-4 h-4 mt-0.5 text-blue-400"></i> service1@linkapp.cn</li>
+                        <li class="flex items-start gap-3"><i data-lucide="phone" class="w-4 h-4 mt-0.5 text-blue-400"></i> 400-823-7828</li>
+                        <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-blue-400"></i> 深圳市龙华区民治街道上芬社区上塘商业大厦</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-slate-500">© 2026 深圳市连用科技有限公司 版权所有</div>
+                <div class="text-sm text-slate-500">粤 ICP 备XXXXXXXX号</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Client logo data - 40 clients with brand-color SVG logos
+        const logoBase = 'images/logos/uniform/';
+        const clients = [
+            { name: '中国建设银行', file: 'ccb.png' },
+            { name: '中国农业银行', file: 'abc.png' },
+            { name: '工银金租', file: 'icbc_leasing.png' },
+            { name: '中国邮政', file: 'chinapost.png' },
+            { name: '中国平安', file: 'pingan.png' },
+            { name: '嘉实基金', file: 'jsfund.png' },
+            { name: '招商基金', file: 'cmfchina.png' },
+            { name: '银联数据', file: 'cupdata.png' },
+            { name: '中国大地保险', file: 'ccic.png' },
+            { name: '深圳市人民医院', file: 'sz_hospital.png' },
+            { name: '宁夏回族自治区人民医院', file: 'nx_hospital.png' },
+            { name: '瑞金医院', file: 'ruijin.png' },
+            { name: '北京丰台医院', file: 'ft_hospital.png' },
+            { name: '郑州人民医院', file: 'zz_hospital.png' },
+            { name: '中山大学附属第三医院', file: 'zs_hospital.png' },
+            { name: '中国商飞', file: 'comac.png' },
+            { name: '比亚迪', file: 'byd.png' },
+            { name: '汇川技术', file: 'inovance.png' },
+            { name: '长安福特', file: 'ford.png' },
+            { name: '华大基因', file: 'bgi.png' },
+            { name: '商汤科技', file: 'sensetime.png' },
+            { name: '海大集团', file: 'haid.png' },
+            { name: '广州市发展和改革委员会', file: 'gzfgw.png' },
+            { name: '国家税务总局深圳市税务局', file: 'sz_tax.png' },
+            { name: '中华人民共和国黄埔海关', file: 'huangpu.png' },
+            { name: '应急管理部', file: 'mem.png' },
+            { name: '中国烟草', file: 'cntc.png' },
+            { name: '中国电信', file: 'chinatelecom.png' },
+            { name: '中国南方电网', file: 'csg.png' },
+            { name: '广州市财政局', file: 'gz_finance.png' },
+            { name: '深圳市自然资源和规划局', file: 'sz_land.png' },
+            { name: '河北省高级人民法院', file: 'hebei_court.png' },
+            { name: '亚辉龙', file: 'yhlo.png' },
+            { name: '派克新材', file: 'paike.png' },
+            { name: '中国铁道科学研究院', file: 'rails_academy.png' },
+            { name: '中国建筑第八工程局有限公司', file: 'cceb.png' },
+            { name: '深圳燃气', file: 'sz_gas.png' },
+            { name: '鲸跃蓝途', file: 'jylt.png' },
+            { name: '瑞松科技', file: 'rs_tech.png' },
+            { name: '融为科技', file: 'rw_tech.png' },
+        ];
+
+        const logoContainer = document.getElementById('client-logos');
+        if (logoContainer) {
+            clients.slice(0, 24).forEach(c => {
+                const div = document.createElement('div');
+                div.className = 'h-20 bg-white rounded-xl border border-slate-200 flex items-center justify-center p-3 hover:border-blue-300 hover:shadow-sm transition-all';
+                const img = document.createElement('img');
+                img.src = logoBase + c.file;
+                img.alt = c.name;
+                img.title = c.name;
+                img.className = 'max-h-[60px] max-w-[150px] object-contain mx-auto my-auto';
+                img.loading = 'lazy';
+                div.appendChild(img);
+                logoContainer.appendChild(div);
+            });
+        }
+
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 600,
+            easing: 'ease-out-cubic'
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-sm');
+            } else {
+                navbar.classList.remove('shadow-sm');
+            }
+        });
+
+        // Counter animation
+        const counters = document.querySelectorAll('.counter-value[data-target]');
+        const observerOptions = { threshold: 0.5 };
+        const counterObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    const duration = 2000;
+                    const start = 0;
+                    const startTime = performance.now();
+                    
+                    function updateCounter(currentTime) {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                        const current = Math.floor(start + (target - start) * easeOutQuart);
+                        counter.textContent = current + '+';
+                        if (progress < 1) {
+                            requestAnimationFrame(updateCounter);
+                        }
+                    }
+                    
+                    requestAnimationFrame(updateCounter);
+                    observer.unobserve(counter);
+                }
+            });
+        }, observerOptions);
+
+        counters.forEach(counter => counterObserver.observe(counter));
+    </script>
+
+    <!-- Back to top -->
+    <button id="back-to-top" aria-label="回到顶部" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full gradient-bg text-white shadow-lg opacity-0 invisible translate-y-3 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+    <script>
+      (function(){
+        var btn = document.getElementById('back-to-top');
+        if(!btn) return;
+        function onScroll(){ if(window.scrollY > 400){ btn.classList.remove('opacity-0','invisible','translate-y-3'); } else { btn.classList.add('opacity-0','invisible','translate-y-3'); } }
+        window.addEventListener('scroll', onScroll, {passive:true});
+        btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+        onScroll();
+        if(window.lucide) lucide.createIcons();
+      })();
+    </script>
+
+</body>
+</html>

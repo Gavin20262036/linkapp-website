@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解决方案 - 连用科技 LinkApp</title>
+    <meta name="description" content="连用科技行业解决方案，覆盖金融、政府、医疗、制造、能源、教育等30+行业。">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="canonical" href="https://www.linkapp.com.cn/solution">
+    <meta name="keywords" content="连用科技,LinkApp,AI数智一体化平台,非结构化数据统管平台,文件网间交换平台,运营类AI解决方案,网盘,企业AI">
+    <meta property="og:site_name" content="连用科技 LinkApp">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="解决方案 - 连用科技 LinkApp">
+    <meta property="og:description" content="连用科技行业解决方案，覆盖金融、政府、医疗、制造、能源、教育等30+行业。">
+    <meta property="og:image" content="https://www.linkapp.com.cn/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="解决方案 - 连用科技 LinkApp">
+    <meta name="twitter:description" content="连用科技行业解决方案，覆盖金融、政府、医疗、制造、能源、教育等30+行业。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .gradient-text { @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500; }
+            .gradient-bg { @apply bg-gradient-to-r from-blue-600 to-cyan-500; }
+            .card-hover { @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl; }
+        }
+    </style>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+        .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .hero-bg {
+  position: relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(59,130,246,0.10) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(6,182,212,0.08) 0%, transparent 55%),
+    linear-gradient(135deg, #eff6ff 0%, #f0f9ff 45%, #eef2ff 100%);
+  overflow: hidden;
+}
+.hero-bg::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, #93c5fd 1px, transparent 1px);
+  background-size: 26px 26px;
+  opacity: 0.35;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 25%, transparent 78%);
+  mask-image: radial-gradient(ellipse at center, black 25%, transparent 78%);
+  pointer-events: none;
+}
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  top: -80px; right: -60px;
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(59,130,246,0.12), transparent 70%);
+  pointer-events: none;
+}
+.eyebrow {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #2563eb;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+.eyebrow::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: 1rem; height: 2px;
+  background: linear-gradient(90deg, #2563eb, #06b6d4);
+  border-radius: 2px;
+}
+    </style>
+</head>
+<body class="text-slate-700 bg-slate-50 antialiased">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 nav-blur border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center text-white"><i data-lucide="link" class="w-5 h-5"></i></div>
+                    <span class="text-xl font-bold text-slate-900">连用科技</span>
+                </a>
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">首页</a>
+                    <a href="product.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">产品中心</a>
+                    <a href="solution.html" class="text-sm font-medium text-blue-600">解决方案</a>
+                    <a href="cases.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">经典案例</a>
+                    <a href="support.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">服务与支持</a>
+                    <a href="news.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">新闻动态</a>
+                    <a href="about.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">关于连用</a>
+                </div>
+                <a href="index.html#contact" class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white rounded-full gradient-bg hover:shadow-lg transition-all">联系我们</a>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-blue-600"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200">
+            <div class="px-4 py-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">首页</a>
+                <a href="product.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">产品中心</a>
+                <a href="solution.html" class="block px-3 py-2 text-sm font-medium text-blue-600 bg-blue-50 rounded-lg">解决方案</a>
+                <a href="cases.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">经典案例</a>
+                <a href="support.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">服务与支持</a>
+                <a href="news.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">新闻动态</a>
+                <a href="about.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 rounded-lg">关于连用</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+                <span class="eyebrow">解决方案</span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">行业专属方案，<span class="gradient-text">贴合业务场景</span></h1>
+            <p class="text-lg text-slate-600 max-w-3xl mx-auto">深耕金融、政府、医疗、制造、能源、教育等 30+ 行业，将数据管理、安全交换与 AI 应用能力融入真实业务场景。</p>
+        </div>
+    </section>
+
+    <section id="finance" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-medium mb-4">金融行业</div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">金融数据安全与文档中台</h2>
+                    <p class="text-slate-600 mb-6">针对银行、证券、保险、基金等金融机构，提供文档中台、文件安全交换、合规审计与知识库管理，满足严格的金融监管与数据安全要求。</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-blue-500 mt-0.5"></i><span>统一纳管海量业务文档，支持全生命周期管理</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-blue-500 mt-0.5"></i><span>跨网数据安全摆渡，满足生产网与办公网隔离要求</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-blue-500 mt-0.5"></i><span>完整审计日志与合规报告，支撑审计检查</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-blue-500 mt-0.5"></i><span>AI 知识库赋能客服、风控、合规等业务场景</span></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <div class="rounded-2xl bg-gradient-to-br from-blue-50 to-white p-8 border border-blue-100 shadow-xl">
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                            <h3 class="font-bold text-slate-900 mb-4">金融行业数据管理闭环</h3>
+                            <div class="space-y-3">
+                                <div class="p-3 rounded-lg bg-blue-50 text-sm text-blue-900">业务文档统一存储</div>
+                                <div class="flex justify-center"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="p-3 rounded-lg bg-blue-50 text-sm text-blue-900">跨网安全交换</div>
+                                <div class="flex justify-center"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="p-3 rounded-lg bg-blue-50 text-sm text-blue-900">AI 知识库应用</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="government" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-delay="200">
+                    <div class="rounded-2xl bg-gradient-to-br from-cyan-50 to-white p-8 border border-cyan-100 shadow-xl">
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                            <h3 class="font-bold text-slate-900 mb-4">政务协同数据管理</h3>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="p-3 rounded-lg bg-cyan-50 text-sm text-cyan-900 text-center">公文管理</div>
+                                <div class="p-3 rounded-lg bg-cyan-50 text-sm text-cyan-900 text-center">档案归档</div>
+                                <div class="p-3 rounded-lg bg-cyan-50 text-sm text-cyan-900 text-center">跨部门交换</div>
+                                <div class="p-3 rounded-lg bg-cyan-50 text-sm text-cyan-900 text-center">安全审计</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2" data-aos="fade-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 text-cyan-600 text-xs font-medium mb-4">政府机构</div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">政务数据安全交换与协同</h2>
+                    <p class="text-slate-600 mb-6">面向各级政府部门，提供公文流转、档案管理、跨部门数据交换与协同办公能力，保障政务数据安全与流程规范。</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-500 mt-0.5"></i><span>电子公文安全流转与归档</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-500 mt-0.5"></i><span>跨网段、跨部门数据交换</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-500 mt-0.5"></i><span>档案数字化与长期保存</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-500 mt-0.5"></i><span>权限分级与操作审计</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="medical" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-xs font-medium mb-4">医疗健康</div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">医疗文件统管与科研知识平台</h2>
+                    <p class="text-slate-600 mb-6">帮助医院、医学院校、科研机构实现医疗文件安全统管、科研资料共享与医学知识智能问答，提升医疗服务与科研效率。</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-indigo-500 mt-0.5"></i><span>医疗文档统一存储与权限管理</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-indigo-500 mt-0.5"></i><span>患者数据与科研资料安全共享</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-indigo-500 mt-0.5"></i><span>医学知识库与智能问答助手</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-indigo-500 mt-0.5"></i><span>满足医疗数据合规要求</span></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <div class="rounded-2xl bg-gradient-to-br from-indigo-50 to-white p-8 border border-indigo-100 shadow-xl">
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                            <h3 class="font-bold text-slate-900 mb-4">医疗知识服务</h3>
+                            <div class="space-y-3">
+                                <div class="p-3 rounded-lg bg-indigo-50 text-sm text-indigo-900">医学文献库</div>
+                                <div class="p-3 rounded-lg bg-slate-50 text-sm text-slate-600">临床指南</div>
+                                <div class="p-3 rounded-lg bg-slate-50 text-sm text-slate-600">病例资料</div>
+                                <div class="p-3 rounded-lg bg-indigo-50 text-sm text-indigo-900">AI 辅助问答</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="manufacturing" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-delay="200">
+                    <div class="rounded-2xl bg-gradient-to-br from-blue-50 to-white p-8 border border-blue-100 shadow-xl">
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                            <h3 class="font-bold text-slate-900 mb-4">制造协同设计</h3>
+                            <div class="space-y-3">
+                                <div class="p-3 rounded-lg bg-blue-50 text-sm text-blue-900">设计图纸管理</div>
+                                <div class="flex justify-center"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="p-3 rounded-lg bg-blue-50 text-sm text-blue-900">供应链协同</div>
+                                <div class="flex justify-center"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="p-3 rounded-lg bg-blue-50 text-sm text-blue-900">知识沉淀复用</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2" data-aos="fade-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-medium mb-4">高端制造</div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">制造图纸管理与供应链协同</h2>
+                    <p class="text-slate-600 mb-6">帮助制造企业实现设计图纸、工艺文件、合同资料的统一管理与安全共享，支撑供应链协同与知识沉淀复用。</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-blue-500 mt-0.5"></i><span>设计图纸集中管理与版本控制</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-blue-500 mt-0.5"></i><span>供应商文件安全外发与回收</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-blue-500 mt-0.5"></i><span>生产工艺知识库建设</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-blue-500 mt-0.5"></i><span>跨地域工厂文件协同</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="energy" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 text-cyan-600 text-xs font-medium mb-4">能源电力</div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">能源生产数据安全交换</h2>
+                    <p class="text-slate-600 mb-6">面向电网、石油、石化等能源企业，提供生产数据交换、调度指令传输、设备文档管理与安全协同能力。</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-500 mt-0.5"></i><span>生产区与管理区数据安全摆渡</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-500 mt-0.5"></i><span>调度指令、巡检资料高效流转</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-500 mt-0.5"></i><span>设备档案与运维知识管理</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-cyan-500 mt-0.5"></i><span>满足电力行业安全分区规范</span></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <div class="rounded-2xl bg-gradient-to-br from-cyan-50 to-white p-8 border border-cyan-100 shadow-xl">
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                            <h3 class="font-bold text-slate-900 mb-4">能源数据交换</h3>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="p-3 rounded-lg bg-cyan-50 text-sm text-cyan-900 text-center">生产数据</div>
+                                <div class="p-3 rounded-lg bg-cyan-50 text-sm text-cyan-900 text-center">调度指令</div>
+                                <div class="p-3 rounded-lg bg-cyan-50 text-sm text-cyan-900 text-center">巡检报告</div>
+                                <div class="p-3 rounded-lg bg-cyan-50 text-sm text-cyan-900 text-center">设备档案</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-delay="200">
+                    <div class="rounded-2xl bg-gradient-to-br from-indigo-50 to-white p-8 border border-indigo-100 shadow-xl">
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                            <h3 class="font-bold text-slate-900 mb-4">智慧校园知识服务</h3>
+                            <div class="space-y-3">
+                                <div class="p-3 rounded-lg bg-indigo-50 text-sm text-indigo-900">教学资料库</div>
+                                <div class="p-3 rounded-lg bg-slate-50 text-sm text-slate-600">科研成果管理</div>
+                                <div class="p-3 rounded-lg bg-slate-50 text-sm text-slate-600">AI 学习助手</div>
+                                <div class="p-3 rounded-lg bg-indigo-50 text-sm text-indigo-900">师生协作空间</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2" data-aos="fade-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-xs font-medium mb-4">教育科研</div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">教育科研资料管理与智能服务</h2>
+                    <p class="text-slate-600 mb-6">面向高校、科研院所、职业院校，提供教学资料管理、科研成果共享、AI 学习助手与师生协作空间，助力智慧校园建设。</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-indigo-500 mt-0.5"></i><span>教学资源与课件统一存储</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-indigo-500 mt-0.5"></i><span>科研资料安全共享与版本管理</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-indigo-500 mt-0.5"></i><span>AI 学习助手与知识问答</span></li>
+                        <li class="flex items-start gap-3 text-sm text-slate-600"><i data-lucide="check-circle" class="w-5 h-5 text-indigo-500 mt-0.5"></i><span>师生跨部门协作与资源回收</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">需要定制化的行业方案？</h2>
+            <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">连用科技拥有丰富的行业落地经验，可根据您的业务需求提供定制化解决方案。</p>
+            <a href="index.html#contact" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white rounded-full gradient-bg hover:shadow-lg transition-all">联系我们</a>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center text-white"><i data-lucide="link" class="w-5 h-5"></i></div>
+                        <span class="text-xl font-bold text-white">连用科技</span>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6">运营类 AI 解决方案提供商和服务商。</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">产品</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="product.html#netdisk" class="hover:text-blue-400 transition-colors">非结构化数据统管平台</a></li>
+                        <li><a href="product.html#exchange" class="hover:text-blue-400 transition-colors">文件网间交换平台</a></li>
+                        <li><a href="product.html#ai" class="hover:text-blue-400 transition-colors">AI 数智一体化平台</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">支持</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="solution.html" class="hover:text-blue-400 transition-colors">解决方案</a></li>
+                        <li><a href="cases.html" class="hover:text-blue-400 transition-colors">经典案例</a></li>
+                        <li><a href="support.html" class="hover:text-blue-400 transition-colors">服务与支持</a></li>
+                        <li><a href="news.html" class="hover:text-blue-400 transition-colors">新闻动态</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">联系我们</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3"><i data-lucide="globe" class="w-4 h-4 mt-0.5 text-blue-400"></i> www.linkapp.cn</li>
+                        <li class="flex items-start gap-3"><i data-lucide="mail" class="w-4 h-4 mt-0.5 text-blue-400"></i> service1@linkapp.cn</li>
+                        <li class="flex items-start gap-3"><i data-lucide="phone" class="w-4 h-4 mt-0.5 text-blue-400"></i> 400-823-7828</li>
+                        <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-blue-400"></i> 深圳市龙华区民治街道上芬社区上塘商业大厦</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-slate-500">© 2026 深圳市连用科技有限公司 版权所有</div>
+                <div class="text-sm text-slate-500">粤 ICP 备XXXXXXXX号</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        AOS.init({ once: true, offset: 100, duration: 600, easing: 'ease-out-cubic' });
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => navbar.classList.toggle('shadow-sm', window.scrollY > 20));
+    </script>
+
+    <!-- Back to top -->
+    <button id="back-to-top" aria-label="回到顶部" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full gradient-bg text-white shadow-lg opacity-0 invisible translate-y-3 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+    <script>
+      (function(){
+        var btn = document.getElementById('back-to-top');
+        if(!btn) return;
+        function onScroll(){ if(window.scrollY > 400){ btn.classList.remove('opacity-0','invisible','translate-y-3'); } else { btn.classList.add('opacity-0','invisible','translate-y-3'); } }
+        window.addEventListener('scroll', onScroll, {passive:true});
+        btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+        onScroll();
+        if(window.lucide) lucide.createIcons();
+      })();
+    </script>
+
+</body>
+</html>
